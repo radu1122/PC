@@ -1,0 +1,23 @@
+
+Copyright 2019 Radu-Andrei Dumitrescu 
+
+-------------------------------------------
+
+Task 1:
+	- Am ales sa stochez matricea de tip int
+	- Elementele de pe margine le-am luat transformat in 4 char-uri, fiecare reprezentand numarul de bytes si asa am facut suma 
+	- Am gasit o formula pentru a afla numarul de bytes de pe marginea hartii si apoi am impartit suma la acest numar pentru a face media aritmetica
+
+-------------------------------------------
+
+Task 2:
+	- Pentru acest task am ales sa las matricea tot de tipul int si sa folosesc tot shiftare pe bytes pentru a putea extrage din int 4 elemente, reprezentand cei 4 bytes
+	- pentru fiecare operatie in parte am facut modificari ale intului Index pentru a putea gasi elementul din matrice pe care trebuia sa il prelucrez
+
+-------------------------------------------
+
+Task 3:
+	- pentru acest ultim task am ales sa creez o noua matrice de tipul unsigned char formata din bytes-ii in ordine de little endian din matricea initiala 
+	- pe aceasta noua matrice am aplicat un algoritm recursiv care de fiecare data cand gasea 0, se apela pe el pentru a cauta 0 sus, jos, stanga si dreapta, daca nu mai gasea 0, returna numarul de elemente de 0 gasite pana atunci. De fiecare data cand trecerea printr-un element care era 0, il facea 1 pentru a nu mai trece inca o data prin acesta
+
+
