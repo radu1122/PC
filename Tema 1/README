@@ -1,0 +1,32 @@
+
+Copyright 2019 Radu-Andrei Dumitrescu 
+
+-------------------------------------------
+
+Problema 1:
+	- pentru a face o singura trece prin vector, fara a-l retine in memorie am ales sa retin variabilele v[i-1]. v[i] si v[i+1], v[i] fiind cea cu care lucram la fiecare pas 
+	- dupa ce faceam testul, v[i-1] lua v[i] si v[i] lua v[i+1] pentru a trece la pasul urmator unde se citea un nou element din sir si pe care il stocam ca v[i+1]
+
+-------------------------------------------
+
+Problema 2: 
+	- retineam de fiecare data intr-un vector cifrele numarului curent cu care lucram 
+	- apoi am creat numerele descrescator si crestor printr-o singura trecere prin vector 	
+	- cele 2 numere le scadeam si apoi retineam intr-un alt vector rezultatul 
+	- aici incepea algoritmul de cautare prin vetorul care retinea diferentele si daca gasea diferenta curenta, tot algoritmul se oprea si returna rezultatul 
+
+-------------------------------------------
+
+Problema 3:
+	- cu o singura trecere prin sirul de note retineam pozitia notelor de 10 si numarul lor 
+	- in sirul creditelor verificam daca pozitia i are nota de 10, faceam suma de credite ori 10, fara a retine nr de credite in niciun vector
+	- daca nota la pozitia i era diferita de 10, atunci retineam intr-un vector diferenta de la punctajul pe care il avea la acea materie, pana la punctajul pe care l-ar fi avut daca se lua nota 10 
+	- vectorul format l-am sortat crescator
+	- am parcurs vectorul in sens invers si la suma de punctaje initiala adunam diferenta daca ar fi luat 10, daca noua suma era mai mare sau egala decat punctajul minim necesar, atunci functia returna nr de pasi facuti si algoritmul se incheia
+
+-------------------------------------------
+
+Problema 4: 
+	- am retinut intr-un vector nr de restrictii pentru fiecare linie si coloana
+	- intr-un alt vector am retinut in ordine restrictiile pe linii si apoi pe coloane in ordine crescatoare
+	- printr-o functie am verificat daca sunt respectate toate restrictiile si daca se ajungea la o conditie care nu era respectate, functia returna 0, daca nu se gasea nicio eroare, atunci returna 1 
